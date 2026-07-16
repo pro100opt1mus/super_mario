@@ -13,7 +13,10 @@ void ConsoleUIFactory::clear_data() {
 	full_boxes.clear();
 	ships.clear();
 	enemies.clear();
+	flying_enemies.clear();
+	jumping_enemies.clear();
 	moneys.clear();
+	moving_platforms.clear();
 }
 
 void ConsoleUIFactory::create_box(
@@ -37,6 +40,19 @@ void ConsoleUIFactory::create_enemy(
 	game_map->add_obj(enemy);
 }
 
+void ConsoleUIFactory::create_flying_enemy(
+	const Coord& top_left, const int width, const int height,
+	const float flight_range
+) {
+	ConsoleFlyingEnemy* flying_enemy =
+		new ConsoleFlyingEnemy(top_left, width, height, flight_range);
+	flying_enemies.push_back(flying_enemy);
+	game->add_map_movable(flying_enemy);
+	game->add_movable(flying_enemy);
+	game->add_collisionable(flying_enemy);
+	game_map->add_obj(flying_enemy);
+}
+
 void ConsoleUIFactory::create_full_box(
 	const Coord& top_left, const int width, const int height
 ) {
@@ -46,6 +62,18 @@ void ConsoleUIFactory::create_full_box(
 	game->add_map_movable(full_box);
 	game->add_static_obj(full_box);
 	game_map->add_obj(full_box);
+}
+
+void ConsoleUIFactory::create_jumping_enemy(
+	const Coord& top_left, const int width, const int height
+) {
+	ConsoleJumpingEnemy* jumping_enemy =
+		new ConsoleJumpingEnemy(top_left, width, height);
+	jumping_enemies.push_back(jumping_enemy);
+	game->add_map_movable(jumping_enemy);
+	game->add_movable(jumping_enemy);
+	game->add_collisionable(jumping_enemy);
+	game_map->add_obj(jumping_enemy);
 }
 
 void ConsoleUIFactory::create_mario(
@@ -74,6 +102,20 @@ void ConsoleUIFactory::create_money(
 	game->add_movable(money);
 	game->add_collisionable(money);
 	game_map->add_obj(money);
+}
+
+void ConsoleUIFactory::create_moving_platform(
+	const Coord& top_left, const int width, const int height,
+	const float travel_range
+) {
+	ConsoleMovingPlatform* moving_platform =
+		new ConsoleMovingPlatform(top_left, width, height, travel_range);
+	moving_platforms.push_back(moving_platform);
+	game->add_map_movable(moving_platform);
+	game->add_movable(moving_platform);
+	game->add_collisionable(moving_platform);
+	game->add_static_obj(moving_platform);
+	game_map->add_obj(moving_platform);
 }
 
 void ConsoleUIFactory::create_ship(
