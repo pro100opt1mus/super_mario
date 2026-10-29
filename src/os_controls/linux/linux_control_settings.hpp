@@ -11,7 +11,8 @@ namespace biv {
 		public:
 			LinuxControlSettings(const int height, const int width);
 			
-			void init() override;
+			~LinuxControlSettings() override;
+            void init() override;
 			void set_cursor_start_position() override;
 	};
 }

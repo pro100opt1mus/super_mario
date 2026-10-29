@@ -5,7 +5,7 @@
 namespace biv {
 	class LinuxKeyboard : public KeyBoard {
 		private:
-			UserInput prev_input;
+			UserInput prev_input = UserInput::NO_INPUT;
 
 		public:
 			UserInput get_user_input() override;

@@ -1,5 +1,9 @@
 target_sources(${PROJECT_NAME}
 	PRIVATE
+		console_flying_enemy.cpp
+		console_jumping_enemy.cpp
+		console_moving_platform.cpp
+		console_exit_ship.cpp
 		console_box.cpp
 		console_enemy.cpp
 		console_full_box.cpp

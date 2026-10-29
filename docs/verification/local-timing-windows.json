@@ -1,0 +1,201 @@
+[
+  {
+    "level": 2,
+    "input_line": 3,
+    "wait_frames": 4,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      0
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 7,
+    "wait_frames": 58,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 10,
+    "wait_frames": 15,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      0,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 13,
+    "wait_frames": 70,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 16,
+    "wait_frames": 10,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 19,
+    "wait_frames": 10,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 4,
+    "wait_frames": 70,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 7,
+    "wait_frames": 45,
+    "next_manoeuvre_passing_offsets": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 10,
+    "wait_frames": 135,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 13,
+    "wait_frames": 229,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 16,
+    "wait_frames": 191,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 19,
+    "wait_frames": 54,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 22,
+    "wait_frames": 91,
+    "next_manoeuvre_passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 25,
+    "wait_frames": 20,
+    "next_manoeuvre_passing_offsets": [
+      -3,
+      0,
+      2,
+      4
+    ]
+  }
+]

@@ -34,3 +34,7 @@ float Rect::get_x() const noexcept {
 float Rect::get_y() const noexcept {
 	return top_left.y;
 }
+
+int Rect::get_width() const noexcept {
+    return width;
+}

@@ -11,9 +11,9 @@ FirstLevel::FirstLevel(UIFactory* ui_factory) : GameLevel(ui_factory) {
 biv::GameLevel* FirstLevel::get_next() {
 	if (!next) {
 		clear_data();
-		next = new biv::SecondLevel(ui_factory);
+		next = std::make_unique<biv::SecondLevel>(ui_factory);
 	}
-	return next;
+	return next.get();
 }
 
 // ----------------------------------------------------------------------------
@@ -38,7 +38,7 @@ void FirstLevel::init_data() {
 	ui_factory->create_ship({100, 25}, 20, 2);
 	ui_factory->create_ship({120, 20}, 10, 7);
 	ui_factory->create_ship({150, 25}, 40, 2);
-	ui_factory->create_ship({210, 20}, 15, 7);
+	ui_factory->create_exit_ship({210, 20}, 15, 7);
 	
 	ui_factory->create_enemy({20, 5}, 3, 2);
 	ui_factory->create_enemy({25, 5}, 3, 2);

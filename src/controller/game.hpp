@@ -10,6 +10,7 @@
 #include "map_movable.hpp"
 #include "mario.hpp"
 #include "movable.hpp"
+#include "moving_support.hpp"
 #include "rect.hpp"
 
 namespace biv {
@@ -20,6 +21,8 @@ namespace biv {
 			std::vector<Collisionable*> collisionable_objs;
 			std::vector<Movable*> movable_objs;
 			
+			std::vector<MovingSupport*> moving_supports;
+			Rect* exit_ship = nullptr;
 			Mario* mario = nullptr;
 			
 			bool is_finished_ = false;
@@ -28,7 +31,13 @@ namespace biv {
 		public:
 			Game();
 			
-			void add_collisionable(Collisionable*);
+			void begin_frame() noexcept;
+            void add_moving_support(MovingSupport*);
+            void remove_moving_support(MovingSupport*);
+            void set_exit(Rect*) noexcept;
+            void move_map_offset(float dx) noexcept;
+            void land_on_moving_support() noexcept;
+            void add_collisionable(Collisionable*);
 			void add_map_movable(MapMovable*);
 			void add_mario(Mario*);
 			void add_movable(Movable*);
@@ -59,6 +68,7 @@ namespace biv {
 			void start_level() noexcept;
 
 		private:
+			float safe_carry_delta(float dx) const noexcept;
 			template<class T>
 			void remove_obj(std::vector<T*>& container, T* obj);
 	};

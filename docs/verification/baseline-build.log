@@ -1,0 +1,136 @@
+[  3%] Building CXX object CMakeFiles/super_mario.dir/main.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/main.cpp:23:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_factory.hpp:3:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_box.hpp:3:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.hpp:20:17: warning: 'get_brush' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   20 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj.hpp:9:17: note: overridden virtual function is here
+    9 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/main.cpp:75:11: warning: enumeration value 'NO_INPUT' not handled in switch [-Wswitch]
+   75 |                 switch (user_input) {
+      |                         ^~~~~~~~~~
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/main.cpp:75:11: note: add missing switch cases
+   75 |                 switch (user_input) {
+      |                         ^
+2 warnings generated.
+[  7%] Building CXX object CMakeFiles/super_mario.dir/os_controls/linux/linux_control_settings.cpp.o
+[ 10%] Building CXX object CMakeFiles/super_mario.dir/os_controls/linux/linux_keyboard.cpp.o
+[ 14%] Building CXX object CMakeFiles/super_mario.dir/controller/game.cpp.o
+[ 17%] Building CXX object CMakeFiles/super_mario.dir/levels/first_level.cpp.o
+[ 21%] Building CXX object CMakeFiles/super_mario.dir/levels/game_level.cpp.o
+[ 25%] Building CXX object CMakeFiles/super_mario.dir/levels/second_level.cpp.o
+[ 28%] Building CXX object CMakeFiles/super_mario.dir/model/collisionable.cpp.o
+[ 32%] Building CXX object CMakeFiles/super_mario.dir/model/game_map.cpp.o
+[ 35%] Building CXX object CMakeFiles/super_mario.dir/model/movable.cpp.o
+[ 39%] Building CXX object CMakeFiles/super_mario.dir/model/rect.cpp.o
+[ 42%] Building CXX object CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o
+[ 46%] Building CXX object CMakeFiles/super_mario.dir/objects/full_box.cpp.o
+[ 50%] Building CXX object CMakeFiles/super_mario.dir/objects/enemy.cpp.o
+[ 53%] Building CXX object CMakeFiles/super_mario.dir/objects/mario.cpp.o
+[ 57%] Building CXX object CMakeFiles/super_mario.dir/objects/money.cpp.o
+[ 60%] Building CXX object CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_game_map.cpp:43:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   43 |                 std::sprintf(map[i], "%s", map[0]);
+      |                      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_game_map.cpp:53:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   53 |                 std::sprintf(map[i], "%s", map[height - 3]);
+      |                      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+2 warnings generated.
+[ 64%] Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_factory.cpp:1:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_factory.hpp:3:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_box.hpp:3:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.hpp:20:17: warning: 'get_brush' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   20 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj.hpp:9:17: note: overridden virtual function is here
+    9 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+1 warning generated.
+[ 67%] Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.cpp:1:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.hpp:20:17: warning: 'get_brush' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   20 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj.hpp:9:17: note: overridden virtual function is here
+    9 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+1 warning generated.
+[ 71%] Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_box.cpp:1:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_box.hpp:3:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.hpp:20:17: warning: 'get_brush' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   20 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj.hpp:9:17: note: overridden virtual function is here
+    9 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+1 warning generated.
+[ 75%] Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_enemy.cpp:1:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_enemy.hpp:7:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.hpp:20:17: warning: 'get_brush' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   20 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj.hpp:9:17: note: overridden virtual function is here
+    9 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+1 warning generated.
+[ 78%] Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_full_box.cpp:1:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_full_box.hpp:3:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.hpp:20:17: warning: 'get_brush' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   20 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj.hpp:9:17: note: overridden virtual function is here
+    9 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+1 warning generated.
+[ 82%] Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_mario.cpp:1:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_mario.hpp:3:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.hpp:20:17: warning: 'get_brush' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   20 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj.hpp:9:17: note: overridden virtual function is here
+    9 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+1 warning generated.
+[ 85%] Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_money.cpp:1:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_money.hpp:3:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.hpp:20:17: warning: 'get_brush' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   20 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj.hpp:9:17: note: overridden virtual function is here
+    9 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+1 warning generated.
+[ 89%] Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_ship.cpp:1:
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_ship.hpp:3:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.hpp:20:17: warning: 'get_brush' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   20 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj.hpp:9:17: note: overridden virtual function is here
+    9 |                         virtual char get_brush() const noexcept = 0;
+      |                                      ^
+1 warning generated.
+[ 92%] Building CXX object CMakeFiles/super_mario.dir/util/format_templates.cpp.o
+[ 96%] Building CXX object CMakeFiles/super_mario.dir/util/logger.cpp.o
+[100%] Linking CXX executable super_mario
+[100%] Built target super_mario

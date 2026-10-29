@@ -28,3 +28,7 @@ void LinuxControlSettings::init() {
 void LinuxControlSettings::set_cursor_start_position() {
 	move(0, 0);
 }
+
+LinuxControlSettings::~LinuxControlSettings() {
+    if (stdscr) endwin();
+}

@@ -22,5 +22,6 @@ namespace biv {
 			void remove_obj(ConsoleUIObject*);
 			void remove_objs() override;
 			void show() const noexcept override;
+            void show_game_complete() const noexcept override;
 	};
 }

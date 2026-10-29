@@ -1,0 +1,182 @@
+[
+  {
+    "level": 2,
+    "input_line": 3,
+    "wait_frames": 4,
+    "passing_offsets": [
+      -4,
+      0
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 7,
+    "wait_frames": 58,
+    "passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 10,
+    "wait_frames": 15,
+    "passing_offsets": [
+      -4,
+      0,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 13,
+    "wait_frames": 70,
+    "passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 16,
+    "wait_frames": 10,
+    "passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 2,
+    "input_line": 19,
+    "wait_frames": 10,
+    "passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 4,
+    "wait_frames": 70,
+    "passing_offsets": [
+      0
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 7,
+    "wait_frames": 45,
+    "passing_offsets": [
+      0
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 10,
+    "wait_frames": 135,
+    "passing_offsets": [
+      0
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 13,
+    "wait_frames": 229,
+    "passing_offsets": [
+      -1,
+      0
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 16,
+    "wait_frames": 191,
+    "passing_offsets": [
+      -2,
+      -1,
+      0
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 19,
+    "wait_frames": 54,
+    "passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 22,
+    "wait_frames": 91,
+    "passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 25,
+    "wait_frames": 20,
+    "passing_offsets": [
+      -3,
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "level": 3,
+    "input_line": 28,
+    "wait_frames": 20,
+    "passing_offsets": [
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+]

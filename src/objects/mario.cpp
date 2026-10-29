@@ -40,3 +40,8 @@ void Mario::process_vertical_static_collision(Rect* obj) noexcept {
 	}
 	vspeed = 0;
 }
+
+void Mario::land_on(float surface_y) noexcept {
+	top_left.y = surface_y - height;
+	vspeed = 0;
+}

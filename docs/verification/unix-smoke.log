@@ -1,0 +1,8 @@
+exit_code=0
+output_bytes=16822
+terminal_modes_restored=True
+alternate_screen_enter=True
+alternate_screen_exit=True
+game_complete_displayed=False
+no_sanitizer_diagnostics=True
+raw_termios_differences=[(3, 1483, 536872395)]

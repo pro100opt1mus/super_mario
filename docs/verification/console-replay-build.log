@@ -1,0 +1,92 @@
+[  3%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/main.cpp.o
+[  9%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/os_controls/linux/linux_control_settings.cpp.o
+[  9%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/controller/game.cpp.o
+[  9%] Building CXX object tests/CMakeFiles/console_replay.dir/replay_keyboard.cpp.o
+[ 12%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/levels/first_level.cpp.o
+In file included from /Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/tests/replay_keyboard.cpp:3:
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/os_controls/linux/linux_keyboard.hpp:8:14: warning: private field 'prev_input' is not used [-Wunused-private-field]
+    8 |                         UserInput prev_input = UserInput::NO_INPUT;
+      |                                   ^
+[ 15%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/levels/game_level.cpp.o
+1 warning generated.
+[ 18%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/levels/second_level.cpp.o
+[ 21%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/levels/third_level.cpp.o
+[ 24%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/model/collisionable.cpp.o
+[ 27%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/model/game_map.cpp.o
+[ 30%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/model/movable.cpp.o
+[ 33%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/model/rect.cpp.o
+[ 36%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/model/rect_map_movable_adapter.cpp.o
+[ 39%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/flying_enemy.cpp.o
+[ 42%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/jumping_enemy.cpp.o
+[ 45%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/moving_platform.cpp.o
+[ 48%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/full_box.cpp.o
+[ 48%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/enemy.cpp.o
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/enemy.cpp:21:55: warning: unused parameter 'obj' [-Wunused-parameter]
+   21 | void Enemy::process_horizontal_static_collision(Rect* obj) noexcept {
+      |                                                       ^
+1 warning generated.
+[ 51%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/mario.cpp.o
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/mario.cpp:26:55: warning: unused parameter 'obj' [-Wunused-parameter]
+   26 | void Mario::process_horizontal_static_collision(Rect* obj) noexcept {
+      |                                                       ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/mario.cpp:31:52: warning: unused parameter 'mario' [-Wunused-parameter]
+   31 | void Mario::process_mario_collision(Collisionable* mario) noexcept {}
+      |                                                    ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/mario.cpp:33:53: warning: unused parameter 'obj' [-Wunused-parameter]
+   33 | void Mario::process_vertical_static_collision(Rect* obj) noexcept {
+      |                                                     ^
+3 warnings generated.
+[ 54%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/money.cpp.o
+[ 57%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_game_map.cpp.o
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/money.cpp:21:55: warning: unused parameter 'obj' [-Wunused-parameter]
+   21 | void Money::process_horizontal_static_collision(Rect* obj) noexcept {
+      |                                                       ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/money.cpp:26:52: warning: unused parameter 'mario' [-Wunused-parameter]
+   26 | void Money::process_mario_collision(Collisionable* mario) noexcept {
+      |                                                    ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/money.cpp:30:53: warning: unused parameter 'obj' [-Wunused-parameter]
+   30 | void Money::process_vertical_static_collision(Rect* obj) noexcept {
+      |                                                     ^
+3 warnings generated.
+[ 60%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_factory.cpp.o
+[ 63%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_ui_obj_rect_adapter.cpp.o
+[ 66%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_flying_enemy.cpp.o
+[ 69%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_jumping_enemy.cpp.o
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/full_box.cpp:19:57: warning: unused parameter 'obj' [-Wunused-parameter]
+   19 | void FullBox::process_horizontal_static_collision(Rect* obj) noexcept {}
+      |                                                         ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/objects/full_box.cpp:28:55: warning: unused parameter 'obj' [-Wunused-parameter]
+   28 | void FullBox::process_vertical_static_collision(Rect* obj) noexcept {}
+      |                                                       ^
+[ 72%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_moving_platform.cpp.o
+2 warnings generated.
+[ 75%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_exit_ship.cpp.o
+[ 78%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_box.cpp.o
+[ 81%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_enemy.cpp.o
+[ 84%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_full_box.cpp.o
+[ 87%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_mario.cpp.o
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_game_map.cpp:43:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   43 |                 std::sprintf(map[i], "%s", map[0]);
+      |                      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/console_game_map.cpp:53:8: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   53 |                 std::sprintf(map[i], "%s", map[height - 3]);
+      |                      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+[ 90%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_money.cpp.o
+[ 93%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/ui/console/ui_objects/console_ship.cpp.o
+2 warnings generated.
+[ 96%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/util/format_templates.cpp.o
+[100%] Building CXX object tests/CMakeFiles/console_replay.dir/Users/artembondarenko/.codex/.chatgpt-projects/g-p-6a8f3af76ec08191b37418d8639fd381/super_mario_upstream/src/util/logger.cpp.o
+[100%] Linking CXX executable console_replay
+[100%] Built target console_replay

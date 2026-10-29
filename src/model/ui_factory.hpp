@@ -18,7 +18,15 @@ namespace biv {
 			UIFactory(Game* game) : game(game) {}
 
 		public:
-			virtual void clear_data() = 0;
+			virtual ~UIFactory() = default;
+            virtual void clear_data() = 0;
+            virtual void collect_inactive() = 0;
+            virtual void create_flying_enemy(const Coord&, int width, int height,
+                float travel, float speed = 0.3f) = 0;
+            virtual void create_jumping_enemy(const Coord&, int width, int height) = 0;
+            virtual void create_moving_platform(const Coord&, int width, int height,
+                float travel, float speed = 0.4f) = 0;
+            virtual void create_exit_ship(const Coord&, int width, int height) = 0;
 			virtual void create_box(
 				const Coord& top_left, const int width, const int height) = 0;
 			virtual void create_enemy(

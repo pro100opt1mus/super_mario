@@ -97,3 +97,12 @@ void ConsoleGameMap::show() const noexcept {
 		::refresh();
 	#endif
 }
+
+void ConsoleGameMap::show_game_complete() const noexcept {
+#ifdef LINUX_CONSOLE
+    mvaddstr(height / 2, 8, "GAME COMPLETE");
+    ::refresh();
+#elif defined(WINDOWS_CONSOLE)
+    std::cout << "\nGAME COMPLETE\n" << std::flush;
+#endif
+}

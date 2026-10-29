@@ -15,6 +15,7 @@ namespace biv {
 
 			int get_bottom() const noexcept;
 			int get_height() const noexcept;
+            int get_width() const noexcept;
 			int get_left() const noexcept;
 			int get_right() const noexcept;
 			int get_top() const noexcept;

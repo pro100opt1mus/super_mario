@@ -1,0 +1,3 @@
+leaks[75719]: [fatal] Couldn't get task port for pid 75720 immediately after launch
+PASS: continuous 1 -> 2 -> 3, final exit and finish
+PASS: 5079 checks

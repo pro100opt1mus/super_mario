@@ -5,6 +5,7 @@
 namespace biv {
 	class ConsoleUIObject {
 		public:
+			virtual ~ConsoleUIObject() = default;
 			virtual int get_bottom() const noexcept = 0;
 			virtual char get_brush() const noexcept = 0;
 			virtual int get_height() const noexcept = 0;

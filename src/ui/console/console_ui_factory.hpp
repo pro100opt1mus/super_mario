@@ -1,4 +1,9 @@
 #pragma once
+#include <memory>
+#include "console_flying_enemy.hpp"
+#include "console_jumping_enemy.hpp"
+#include "console_moving_platform.hpp"
+#include "console_exit_ship.hpp"
 
 #include "console_box.hpp"
 #include "console_enemy.hpp"
@@ -12,16 +17,28 @@
 namespace biv {
 	class ConsoleUIFactory : public UIFactory {
 		private:
-			ConsoleGameMap* game_map = nullptr;
-			std::vector<ConsoleBox*> boxes;
-			std::vector<ConsoleFullBox*> full_boxes;
-			std::vector<ConsoleShip*> ships;
-			ConsoleMario* mario = nullptr;
-			std::vector<ConsoleEnemy*> enemies;
-			std::vector<ConsoleMoney*> moneys;
+			std::unique_ptr<ConsoleGameMap> game_map;
+			std::vector<std::unique_ptr<ConsoleBox>> boxes;
+			std::vector<std::unique_ptr<ConsoleFullBox>> full_boxes;
+			std::vector<std::unique_ptr<ConsoleShip>> ships;
+			std::unique_ptr<ConsoleMario> mario;
+			std::vector<std::unique_ptr<ConsoleEnemy>> enemies;
+			std::vector<std::unique_ptr<ConsoleMoney>> moneys;
 
-		public:
-			ConsoleUIFactory(Game* game);
+		    std::vector<std::unique_ptr<ConsoleFlyingEnemy>> flying_enemies;
+            std::vector<std::unique_ptr<ConsoleJumpingEnemy>> jumping_enemies;
+            std::vector<std::unique_ptr<ConsoleMovingPlatform>> platforms;
+            std::vector<std::unique_ptr<ConsoleExitShip>> exits;
+            template<class T> void collect(std::vector<std::unique_ptr<T>>& objects);
+
+        public:
+            ~ConsoleUIFactory() override;
+            void collect_inactive() override;
+            void create_flying_enemy(const Coord&, int, int, float, float = 0.3f) override;
+            void create_jumping_enemy(const Coord&, int, int) override;
+            void create_moving_platform(const Coord&, int, int, float, float = 0.4f) override;
+            void create_exit_ship(const Coord&, int, int) override;
+            ConsoleUIFactory(Game* game);
 			
 			void clear_data() override;
 			void create_box(

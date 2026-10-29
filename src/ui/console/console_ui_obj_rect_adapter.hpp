@@ -17,6 +17,6 @@ namespace biv {
 			int get_right() const noexcept override;
 			int get_top() const noexcept override;
 			
-			virtual char get_brush() const noexcept = 0;
+			char get_brush() const noexcept override = 0;
 	};
 }

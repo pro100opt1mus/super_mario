@@ -8,6 +8,7 @@
 */
 
 #include <cstddef>
+#include <memory>
 
 #include "ui_factory.hpp"
 
@@ -17,13 +18,14 @@ namespace biv {
 			UIFactory* ui_factory = nullptr;
 			
 			GameLevel* parent = nullptr;
-			GameLevel* next = nullptr;
+			std::unique_ptr<GameLevel> next;
 
 		protected:
 			GameLevel(UIFactory*);
 
 		public:
-			virtual void restart();
+			virtual ~GameLevel() = default;
+            virtual void restart();
 			virtual bool is_final() const noexcept;
 
 			virtual GameLevel* get_next() = 0;

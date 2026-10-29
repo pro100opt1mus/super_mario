@@ -98,3 +98,38 @@
 представлен очень хорошо. И найти такого же качества материал непросто. Главное - 
 не покупайте ничего на представленном сайте и не ведите никакой переписки. 
 Бесплатного материала там хватит с головой.  
+
+## Реализация учебного задания
+
+Работа выполнена от преподавательского commit `db579bfbc1ff91ee2853c53b58d208447e126f56`.
+Добавлены `FlyingEnemy` (`f`), `JumpingEnemy` (`j`), `MovingPlatform` (`=`), явный выход (`+`),
+новый второй уровень и третий финальный уровень. Первый уровень сохраняет исходную геометрию.
+После третьего выхода отображается `GAME COMPLETE`.
+
+Сборка Unix/macOS из корня репозитория (CMake, C++14+, ncurses):
+
+```sh
+cmake -S src -B build_unix -DGAME_TYPE=LinuxConsole
+cmake --build build_unix
+ctest --test-dir build_unix --output-on-failure
+./build_unix/super_mario
+```
+
+На проверенном Mac перед командами CMake использовалось
+`DEVELOPER_DIR=/Library/Developer/CommandLineTools`.
+Окно терминала желательно не меньше 200 столбцов и 30 строк — это исходный размер игровой карты.
+На Unix A/D задают движение, S останавливает, Space прыгает, Q завершает игру.
+На платформе можно ехать без нажатий, двигаться по ней, прыгнуть и сойти.
+Ждите удобного положения платформы на берегу; на третьем уровне используйте острова как места ожидания.
+
+Проверки с дополнительными предупреждениями и ASan/UBSan:
+
+```sh
+cmake -S src -B build_checked -DGAME_TYPE=LinuxConsole -DTEACHER_DIAGNOSTICS=ON -DTEACHER_SANITIZERS=ON -DCMAKE_BUILD_TYPE=Debug
+cmake --build build_checked
+ctest --test-dir build_checked --output-on-failure
+```
+
+Для Windows сохранён выбор `-DGAME_TYPE=WindowsConsole` и исходный `build.bat`.
+Фактические границы проверки, журналы и отличия от baseline: [отчёт](docs/verification/STATUS.md).
+Диаграммы, изучение кода с нуля и вопросы: [подготовка к защите](docs/DEFENSE_GUIDE_RU.md).
